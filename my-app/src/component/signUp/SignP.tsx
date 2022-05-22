@@ -8,14 +8,15 @@ function SignP({ closeModal }: appProps) {
   const [userDetails, setUserDetails] = useState({
     firstName: "",
     lastName: "",
-    userName: "",
+    username: "",
+    email: "",
     password: ""
   })
 
 
-  const handleSubmit = ( ) => {
+  const handleSubmit = async ( ) => {
     try{
-      axios.post('http://localhost:4000/api/auth/register', userDetails)
+     await axios.post('http://localhost:4000/api/auth/register', userDetails)
       console.log('success')
     }catch(err){
       console.log(err)
@@ -43,9 +44,12 @@ function SignP({ closeModal }: appProps) {
           <input placeholder="Last Name" onChange={(e) => setUserDetails({
             ...userDetails,
             lastName: e.target.value })}/>
+          <input placeholder="User" onChange={(e) => setUserDetails({
+            ...userDetails,
+            username: e.target.value })}/>
           <input placeholder="Email" onChange={(e) => setUserDetails({
             ...userDetails,
-            userName: e.target.value })}/>
+            email: e.target.value })}/>
           <input placeholder="Password" onChange={(e) => setUserDetails({
             ...userDetails,
             password: e.target.value })}/>
