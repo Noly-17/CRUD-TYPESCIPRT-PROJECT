@@ -4,29 +4,24 @@ const userSchema = new mongo.Schema(
   {
     firstName: {
       type: String,
-      required: true,
-    },
+     },
     lastName: {
       type: String,
-      required: true,
-    },
+     },
     username: {
       type: String,
-      required: true,
-      unique: true,
+       unique: true,
     },
     image: {
       type: String,
     },
     email: {
       type: String,
-      required: true,
-      unique: true,
+       unique: true,
     },
     password: {
       type: String,
-      required: true,
-    },
+     },
     isAdmin: {
       type: Boolean,
       default: false,
