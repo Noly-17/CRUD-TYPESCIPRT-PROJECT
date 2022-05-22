@@ -1,0 +1,70 @@
+@media screen and (min-width: 1px) {
+  .modalBackground {
+    background-color: gray;
+    padding-top: 50px;
+    height: 100vh;
+    margin-top: 5%;
+    .modalContainer {
+      text-align: center;
+
+      margin: 15% 5% 0 5%;
+      background-color: black;
+      width: 90%;
+      height: auto;
+      padding: 100px 0;
+      color: white;
+      border-radius: 20px;
+      position: relative;
+    }
+    .closeBtn {
+      position: absolute;
+      top: 3%;
+      left: 83%;
+      padding: 10px;
+      button {
+        padding: 7px;
+        font-size: 1em;
+        font-weight: 900;
+        color: white;
+        background-color: transparent;
+        border-radius: 20px;
+      }
+    }
+    .title {
+      font-size: 2.5em;
+      padding-bottom: 20px;
+    }
+
+    .body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 5px;
+      input {
+        width: 80%;
+        padding: 0.8em;
+        margin-top: 5px;
+        border-radius: 10px;
+      }
+
+      button {
+        width: 80%;
+        padding: 0.9em 3em;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: yellow;
+      }
+    }
+
+    .footer {
+      p {
+        font-size: 0.8em;
+        margin-top: 30px;
+      }
+      a {
+        color: yellow;
+      }
+    }
+  }
+}
